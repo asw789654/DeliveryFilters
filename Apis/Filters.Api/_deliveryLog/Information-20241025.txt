@@ -1,0 +1,73 @@
+2024-10-25 15:16:30.735 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-10-25 15:16:30.820 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-10-25 15:16:31.116 +03:00 [INF] Now listening on: http://localhost:5165
+2024-10-25 15:16:31.119 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-25 15:16:31.121 +03:00 [INF] Hosting environment: Development
+2024-10-25 15:16:31.122 +03:00 [INF] Content root path: C:\Users\iliuh\source\repos\DeliveryFilters\Apis\Filters.Api
+2024-10-25 15:16:32.025 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger - null null
+2024-10-25 15:16:32.454 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger - 301 0 null 435.5375ms
+2024-10-25 15:16:32.463 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - null null
+2024-10-25 15:16:32.551 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 null text/html;charset=utf-8 88.7558ms
+2024-10-25 15:16:32.601 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui.css - null null
+2024-10-25 15:16:32.601 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-25 15:16:32.601 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - null null
+2024-10-25 15:16:32.609 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.js - null null
+2024-10-25 15:16:32.619 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 19.5185ms
+2024-10-25 15:16:32.622 +03:00 [INF] The file /swagger-ui.css was not modified
+2024-10-25 15:16:32.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.css - null null
+2024-10-25 15:16:32.628 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.js - 200 null application/javascript;charset=utf-8 19.0466ms
+2024-10-25 15:16:32.640 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-bundle.js - null null
+2024-10-25 15:16:32.641 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui.css - 304 null text/css 40.3284ms
+2024-10-25 15:16:32.655 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2024-10-25 15:16:32.645 +03:00 [INF] The file /index.css was not modified
+2024-10-25 15:16:32.674 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-standalone-preset.js - null null
+2024-10-25 15:16:32.689 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-bundle.js - 304 null text/javascript 49.1099ms
+2024-10-25 15:16:32.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.css - 304 null text/css 51.506ms
+2024-10-25 15:16:32.697 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-10-25 15:16:32.717 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 43.2281ms
+2024-10-25 15:16:32.751 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 149.8212ms
+2024-10-25 15:16:32.822 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/favicon-16x16.png - null null
+2024-10-25 15:16:32.838 +03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2024-10-25 15:16:32.841 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/favicon-16x16.png - 499 665 image/png 19.6697ms
+2024-10-25 15:16:32.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - null null
+2024-10-25 15:16:32.890 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-10-25 15:16:33.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 150.7615ms
+2024-10-25 15:16:46.260 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5165/api/v1/Orders - application/json 88
+2024-10-25 15:16:46.289 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-10-25 15:16:46.328 +03:00 [INF] No CORS policy found for the specified request.
+2024-10-25 15:16:46.352 +03:00 [INF] Executing endpoint 'HTTP: POST api/v1/Orders => PostOrder'
+2024-10-25 15:16:46.681 +03:00 [INF] Executed endpoint 'HTTP: POST api/v1/Orders => PostOrder'
+2024-10-25 15:16:46.746 +03:00 [WRN] Response error BadRequest: Validation failed: 
+ -- DeliveringDateTime: 'Delivering Date Time' должно быть больше '25.10.2024 12:16:46'. Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- DeliveringDateTime: 'Delivering Date Time' должно быть больше '25.10.2024 12:16:46'. Severity: Error
+   at Core.Application.Behavior.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\iliuh\source\repos\DeliveryFilters\Application\Core\Core.Application\Behavior\ValidationBehavior.cs:line 26
+   at Orders.Api.Apis.OrdersApi.PostOrder(IMediator mediator, CreateOrderCommand command, CancellationToken cancellationToken) in C:\Users\iliuh\source\repos\DeliveryFilters\Apis\Filters.Api\Apis\OrdersApi.cs:line 63
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Core.Api.Middlewares.CoreExceptionsHandlerMiddleware.Invoke(HttpContext context, ILogger`1 logger) in C:\Users\iliuh\source\repos\DeliveryFilters\Application\Core\Core.Api\MIddlewares\CoreExceptionsHandlerMiddlewareExtensions.cs:line 16
+2024-10-25 15:16:46.848 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5165/api/v1/Orders - 400 null application/json 588.3503ms
+2024-10-25 15:17:00.659 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5165/api/v1/Orders - application/json 88
+2024-10-25 15:17:00.666 +03:00 [INF] No CORS policy found for the specified request.
+2024-10-25 15:17:00.668 +03:00 [INF] Executing endpoint 'HTTP: POST api/v1/Orders => PostOrder'
+2024-10-25 15:17:01.075 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Orders" ("OrderId", "DeliveringDateTime", "RegionId", "Weight")
+VALUES (@p0, @p1, @p2, @p3);
+2024-10-25 15:17:01.143 +03:00 [INF] Setting HTTP status code 201.
+2024-10-25 15:17:01.145 +03:00 [INF] Writing value of type 'GetOrderDto' as Json.
+2024-10-25 15:17:01.151 +03:00 [INF] Executed endpoint 'HTTP: POST api/v1/Orders => PostOrder'
+2024-10-25 15:17:01.157 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5165/api/v1/Orders - 201 null application/json; charset=utf-8 498.0194ms
+2024-10-25 15:17:24.916 +03:00 [INF] Request starting HTTP/1.1 GET http://localhos
